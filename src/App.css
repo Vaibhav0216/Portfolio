@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+
+
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #000;
+    --header-background-color: #fff;
+    --header-text-color: #000;
+    --link-color: #007bff;
+    --button-background-color: #007bff;
+    --button-text-color: #fff;
+    --section-background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #fff;
+    --header-background-color: #333;
+    --header-text-color: #fff;
+    --link-color: #1e90ff;
+    --button-background-color: #1e90ff;
+    --button-text-color: #fff;
+    --section-background-color: #1e1e1e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+    padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+header, footer {
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover,
+a.active {
+    color: var(--link-color);
+}
+
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+section {
+    background-color: var(--section-background-color);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
 }

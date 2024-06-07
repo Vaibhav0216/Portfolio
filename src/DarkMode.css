@@ -1,0 +1,23 @@
+/* DarkModeToggle.css */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .dark-mode-toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .dark-mode-toggle label {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 20px;
+  }
+  
+  .dark-mode-toggle input[type="checkbox"]:checked + label {
+    background-color: #333;
+    color: #fff;
+  }
+  
