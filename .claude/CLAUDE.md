@@ -1,0 +1,2 @@
+- Always use the built-in Edit and Write tools to modify or create files.
+- Never use Bash commands (`cat`, `EOF`, `echo`, `sed`) to write or edit files.
