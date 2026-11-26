@@ -1,7 +1,7 @@
 export const personal = {
   name: "Vaibhav Kshirsagar",
   title: "Senior Embedded Systems Engineer",
-  email: "maulikshirsagarvk18@gmail.com",
+  email: "hello@vaibhavkshirsagar.com",
   phone: "+91-74982 36616",
   github: "https://github.com/Vaibhav0216",
   location: "Pune, India",

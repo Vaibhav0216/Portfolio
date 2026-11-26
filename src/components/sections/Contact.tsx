@@ -27,29 +27,29 @@ export function Contact() {
           title="Get in Touch"
           subtitle="Feel free to reach out for collaborations, opportunities, or just a conversation about embedded systems"
         />
-        <div className="max-w-md mx-auto space-y-4">
+        <div className="max-w-md mx-auto space-y-3 sm:space-y-4">
           <a
             href={`mailto:${personal.email}`}
-            className="flex items-center justify-center gap-3 p-4 rounded-lg border border-border dark:border-border-dark hover:bg-white dark:hover:bg-background-dark transition-colors"
+            className="flex items-center justify-center gap-3 p-4 rounded-lg border border-border dark:border-border-dark hover:bg-white dark:hover:bg-background-dark transition-colors min-h-[52px]"
           >
-            <Mail size={20} className="text-accent dark:text-accent-dark" />
-            <span className="text-sm">{personal.email}</span>
+            <Mail size={20} className="text-accent dark:text-accent-dark flex-shrink-0" />
+            <span className="text-sm break-all sm:break-normal">{personal.email}</span>
           </a>
           <a
             href={personal.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 p-4 rounded-lg border border-border dark:border-border-dark hover:bg-white dark:hover:bg-background-dark transition-colors"
+            className="flex items-center justify-center gap-3 p-4 rounded-lg border border-border dark:border-border-dark hover:bg-white dark:hover:bg-background-dark transition-colors min-h-[52px]"
           >
-            <GithubIcon size={20} className="text-accent dark:text-accent-dark" />
+            <GithubIcon size={20} className="text-accent dark:text-accent-dark flex-shrink-0" />
             <span className="text-sm">github.com/Vaibhav0216</span>
           </a>
-          <div className="flex items-center justify-center gap-3 p-4 rounded-lg border border-border dark:border-border-dark">
-            <Phone size={20} className="text-accent dark:text-accent-dark" />
+          <div className="flex items-center justify-center gap-3 p-4 rounded-lg border border-border dark:border-border-dark min-h-[52px]">
+            <Phone size={20} className="text-accent dark:text-accent-dark flex-shrink-0" />
             <span className="text-sm">{personal.phone}</span>
           </div>
-          <div className="flex items-center justify-center gap-3 p-4 rounded-lg border border-border dark:border-border-dark">
-            <MapPin size={20} className="text-accent dark:text-accent-dark" />
+          <div className="flex items-center justify-center gap-3 p-4 rounded-lg border border-border dark:border-border-dark min-h-[52px]">
+            <MapPin size={20} className="text-accent dark:text-accent-dark flex-shrink-0" />
             <span className="text-sm">{personal.location}</span>
           </div>
         </div>

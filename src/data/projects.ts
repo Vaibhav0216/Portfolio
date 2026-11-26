@@ -41,9 +41,10 @@ export const projects: ProjectCard[] = [
     tech: ["C", "ARM Cortex-M4", "Bare-Metal"],
   },
   {
-    title: "Embedded Linux IPC Gateway",
+    title: "Embedded Linux Data Logger — STM32MP1",
     description:
-      "Multi-process IPC system using Unix Domain Sockets for decoupled sensor acquisition with I2C hardware interface and CRC validation.",
-    tech: ["C", "Linux", "AF_UNIX", "I2C", "Syslog"],
+      "Linux-based data logger on STM32MP1 with multi-process architecture using Unix Domain Sockets, I2C sensor acquisition, and structured logging with syslog/journald integration.",
+    tech: ["C", "STM32MP1", "Linux", "I2C", "Syslog"],
+    metric: "Dual Cortex-A7/M4",
   },
 ];

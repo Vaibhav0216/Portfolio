@@ -15,10 +15,10 @@ function ProjectDetail({ project }: { project: Project }) {
     <div className="mt-3 border border-border dark:border-border-dark rounded-lg overflow-hidden">
       <button
         onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+        className="w-full flex items-center justify-between gap-2 p-3 sm:p-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
       >
-        <div>
-          <h4 className="font-medium text-sm">{project.name}</h4>
+        <div className="min-w-0 flex-1">
+          <h4 className="font-medium text-sm leading-snug">{project.name}</h4>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {project.tech.map((t) => (
               <span
@@ -30,7 +30,7 @@ function ProjectDetail({ project }: { project: Project }) {
             ))}
           </div>
         </div>
-        {expanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+        <span className="flex-shrink-0">{expanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}</span>
       </button>
       {expanded && (
         <ul className="px-4 pb-4 space-y-2">
