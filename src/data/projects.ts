@@ -11,7 +11,7 @@ export const projects: ProjectCard[] = [
     description:
       "Complete ESP32 firmware architecture using FreeRTOS for industrial Modbus-to-cloud data pipeline with TLS security and offline resilience.",
     tech: ["ESP32", "FreeRTOS", "C", "MQTT", "AWS IoT Core"],
-    metric: "70+ devices deployed",
+    metric: "120+ devices deployed",
   },
   {
     title: "Multi-Tenant IoT Cloud Platform",

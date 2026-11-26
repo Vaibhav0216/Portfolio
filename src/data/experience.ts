@@ -28,7 +28,7 @@ export const experiences: Experience[] = [
           "Implemented MQTT client stack with TLS 1.2 and automatic reconnection logic for stable cloud publishing to AWS IoT Core.",
           "Engineered SD-card offline data logging (16 GB, FAT32) with RTC timestamps as a circular buffer; stress-tested with 20,000+ log files.",
           "Hardened firmware security using ESP32 Secure Boot V2 + Flash Encryption.",
-          "Deployed to 70+ industrial field devices for multiple customers — firmware is in active production.",
+          "Deployed to 120+ industrial field devices for multiple customers — firmware is in active production.",
         ],
       },
       {

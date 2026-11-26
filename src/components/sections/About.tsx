@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { personal } from "@/data/personal";
@@ -16,9 +17,20 @@ export function About() {
       >
         <SectionHeading title="About Me" />
         <div className="max-w-3xl mx-auto">
-          <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 text-center">
-            {personal.summary}
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-8 mb-8">
+            <div className="relative w-36 h-36 sm:w-44 sm:h-44 flex-shrink-0">
+              <Image
+                src="/profile.jpg"
+                alt={personal.name}
+                fill
+                className="rounded-full object-cover border-4 border-accent/20 dark:border-accent-dark/20"
+                priority
+              />
+            </div>
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-center sm:text-left">
+              {personal.summary}
+            </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {personal.stats.map((stat) => (
               <div
