@@ -17,27 +17,30 @@ export function Hero() {
           Hello, I&apos;m
         </p>
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">{personal.name}</h1>
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6 font-mono">
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-3 font-mono">
           {personal.title}
+        </p>
+        <p className="text-xs sm:text-sm font-mono text-accent dark:text-accent-dark mb-6">
+          Available for Consulting — Embedded Systems &middot; IoT Solutions &middot; Cloud &amp; Backend
         </p>
         <p className="text-sm sm:text-base text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
           {personal.summary}
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
           <a
             href={personal.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-accent dark:bg-accent-dark text-white rounded-lg hover:opacity-90 transition-opacity font-medium"
+            className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 bg-accent dark:bg-accent-dark text-white rounded-lg hover:opacity-90 transition-opacity font-medium text-sm sm:text-base"
           >
             <Download size={18} />
             Download Resume
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-border dark:border-border-dark rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium"
+            className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 border border-border dark:border-border-dark rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium text-sm sm:text-base"
           >
-            Get in Touch
+            Hire Me
           </a>
         </div>
         <motion.div
