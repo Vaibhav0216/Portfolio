@@ -1,0 +1,267 @@
+\documentclass[letterpaper,10.5pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{xcolor}
+
+% ── Color palette ──────────────────────────────────────────
+\definecolor{navy}{HTML}{003366}
+\definecolor{darkgray}{HTML}{2E2E2E}
+\definecolor{medgray}{HTML}{555555}
+\definecolor{lightgray}{HTML}{888888}
+
+% ── Page geometry ───────────────────────────────────────────
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.72in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ── Section style ───────────────────────────────────────────
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries\color{navy}
+}{}{0em}{}[\color{navy}\titlerule\vspace{-4pt}]
+
+\pdfgentounicode=1
+
+% ── Helpers ─────────────────────────────────────────────────
+\newcommand{\resumeItem}[1]{%
+  \item\small{\color{darkgray}#1\vspace{-1pt}}}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\color{navy}#1} & \textbf{\small\color{navy}#2}\\
+    \textit{\small\color{medgray}#3} & \textit{\small\color{medgray}#4}\\
+  \end{tabular*}\vspace{-6pt}}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small\color{navy}#2}\\
+  \end{tabular*}\vspace{-6pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in,topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+% ── Inline tech tag ─────────────────────────────────────────
+\newcommand{\tech}[1]{\textit{\small\color{medgray}#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% ════════════════ HEADING ════════════════════════════════════
+\begin{center}
+  {\Huge\scshape\bfseries\color{navy} Vaibhav Kshirsagar}\\[5pt]
+  \small\color{darkgray}
+  \href{tel:+917498236616}{+91-74982\,36616}
+  \quad\textcolor{lightgray}{$|$}\quad
+  \href{mailto:hello@vaibhavkshirsagar.com}{hello@vaibhavkshirsagar.com}
+  \quad\textcolor{lightgray}{$|$}\quad
+  \href{https://github.com/Vaibhav0216}{github.com/Vaibhav0216}
+  \quad\textcolor{lightgray}{$|$}\quad
+  \href{https://vaibhavkshirsagar.com}{vaibhavkshirsagar.com}
+  \quad\textcolor{lightgray}{$|$}\quad
+  Pune, India
+\end{center}
+
+\vspace{-6pt}
+
+% ════════════════ PROFILE ════════════════════════════════════
+\section{Professional Summary}
+\vspace{2pt}
+{\small\color{darkgray}
+Embedded Systems Engineer with \textbf{2.5+ years} of production experience spanning \textbf{Linux BSP development}, bare-metal and RTOS-based firmware on \textbf{STM32MP1 (dual Cortex-A7/M4)}, \textbf{ESP32}, and \textbf{STM32F4} platforms. Hands-on expertise in \textbf{Linux device driver development}, \textbf{Device Tree configuration}, \textbf{DRM/KMS display} and \textbf{touchscreen integration}, and hardware interface bring-up (UART, SPI, I2C, RS-485, GPIO). Proficient in \textbf{C programming}, \textbf{FreeRTOS multithreading \& IPC}, cross-compilation toolchains, and the \textbf{Yocto build system}. Architected and deployed a production IoT gateway platform — from Linux kernel-level drivers to AWS cloud backend — currently serving \textbf{120+ field devices} across 5 industrial customers.
+}
+
+\vspace{-2pt}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\vspace{0.5em}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Government College of Engineering, Karad}{2020 -- 2024}
+      {Btech - Electronics and Telecommunication - \textbf{CGPA} - \textbf{7.52}}{Karad, India}
+  \resumeSubHeadingListEnd
+
+\vspace{-0.3em}
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {R.P. College}{2020}
+      {HSC - General Science  - \textbf{Percentage} - \textbf{78.77\%}}{Dharashiv, India}
+  \resumeSubHeadingListEnd
+
+% ════════════════ SKILLS ════════════════════════════════════
+\section{Technical Skills}
+\vspace{3pt}
+{\small\color{darkgray}
+\begin{tabular*}{\textwidth}{@{}lp{13.2cm}@{}}
+  \textbf{Languages}           & C (primary), C++, Python, Bash/Shell Scripting, JavaScript, SQL \\[2pt]
+  \textbf{SOC / Embedded}      & STM32MP157 (Cortex-A7/M4), STM32F4 (Cortex-M4), ESP32, Raspberry Pi, FreeRTOS, ESP-IDF \\[2pt]
+  \textbf{Linux BSP}           & Device Tree (DTS/DTSI), Device Driver development, DRM/KMS framebuffer, Linux GPIO chardev, Yocto build system, U-Boot, cross-compilation (arm-linux-gnueabihf), systemd \\[2pt]
+  \textbf{Hardware Interfaces} & UART, SPI, I2C, GPIO, RS-485, Modbus RTU/TCP, ADC, USB, Ethernet, NVIC/EXTI \\[2pt]
+  \textbf{Display / Touch}     & MIPI-DSI, DRM/KMS, Linux framebuffer (/dev/fb0), capacitive touchscreen (Linux input subsystem), TFT LCD \\[2pt]
+  \textbf{Protocols}           & MQTT (TLS 1.2), TCP/IP, Modbus RTU/TCP, HTTP/HTTPS, UART, SPI, I2C, RS-485, WebSocket \\[2pt]
+  \textbf{Tools \& DevOps}     & GDB, JTAG, logic analyser, Git, GitLab CI/CD, Docker, CMake, Make, Jenkins \\[2pt]
+  \textbf{Cloud / IoT}         & AWS IoT Core, Lambda (Python), API Gateway, DynamoDB, RDS (PostgreSQL), S3 \\[2pt]
+  \textbf{Security}            & Secure Boot V2, Flash Encryption, TLS 1.2, JWT Authentication \\
+\end{tabular*}
+}
+
+\vspace{-2pt}
+
+% ════════════════ EXPERIENCE ═════════════════════════════════
+\section{Experience}
+\resumeSubHeadingListStart
+
+  % ── Job 1 ──────────────────────────────────────────────────
+  \resumeSubheading
+    {AMSET Technologies Pvt. Ltd.}{July 2024 -- Present}
+    {Embedded Systems Engineer}{Pune, India}
+
+  \vspace{4pt}
+  \textbf{\small\color{navy}Project 1: Industrial Modbus-to-MQTT IoT Gateway}
+  \hfill\tech{ESP32 \textbullet\ FreeRTOS \textbullet\ Modbus RTU \textbullet\ MQTT/TLS \textbullet\ C \textbullet\ AWS IoT Core}
+
+  \resumeItemListStart
+    \resumeItem{Designed complete gateway firmware architecture on ESP32 using \textbf{FreeRTOS} — structured as independent tasks communicating via queues and semaphores for Modbus polling, MQTT publishing, SD logging, and Wi-Fi management.}
+    \resumeItem{Wrote a \textbf{custom Modbus RTU master driver} in C over UART, handling RS-485 framing, CRC validation, exception codes, and configurable polling intervals; validated against physical field devices.}
+    \resumeItem{Implemented \textbf{MQTT client stack with TLS 1.2}, structured JSON payloads, and automatic reconnection logic for stable cloud publishing to AWS IoT Core.}
+    \resumeItem{Engineered \textbf{SD-card offline data logging} (16 GB, FAT32) with RTC timestamps as a circular buffer; stress-tested with 20,000+ log files for durability under power-cycle conditions.}
+    \resumeItem{Hardened firmware security using \textbf{ESP32 Secure Boot V2 + Flash Encryption}, preventing firmware extraction and enabling authenticated OTA updates.}
+    \resumeItem{Added \textbf{edge-level automation}: configurable rule engine and scheduling that executes locally without cloud dependency.}
+    \resumeItem{Built a \textbf{lightweight HTTP web server} on the device for Wi-Fi provisioning and remote diagnostics.}
+    \resumeItem{Debugged hardware/software issues using \textbf{JTAG, ESP-IDF GDB monitor}, and serial trace analysis; resolved race conditions in FreeRTOS task synchronization.}
+    \resumeItem{\textbf{Deployed to 120+ industrial field devices} for multiple customers — firmware is in active production.}
+  \resumeItemListEnd
+
+  \vspace{4pt}
+  \textbf{\small\color{navy}Project 2: Multi-Tenant IoT Cloud Platform}
+  \hfill\tech{AWS IoT Core \textbullet\ DynamoDB \textbullet\ PostgreSQL \textbullet\ Lambda (Python) \textbullet\ Next.js \textbullet\ WebSocket}
+
+  \resumeItemListStart
+    \resumeItem{Architected full cloud backend from scratch after evaluating ThingsBoard limitations; designed for multi-tenant isolation so each customer accesses only their own devices, dashboards, and reports.}
+    \resumeItem{Built \textbf{high-speed telemetry ingestion pipeline}: AWS IoT Core Rules → Lambda → DynamoDB with GSIs optimized for time-series queries.}
+    \resumeItem{Developed \textbf{real-time alert system} using WebSocket API Gateway + DynamoDB Streams with sub-1-second alert delivery to dashboards.}
+    \resumeItem{Implemented \textbf{remote firmware logging}: device logs pushed to S3 on alert trigger for post-mortem analysis.}
+    \resumeItem{Modeled relational data (customers, users, devices) in \textbf{PostgreSQL (RDS)} with JWT-secured API authentication.}
+    \resumeItem{Platform \textbf{currently serving 5 industrial customers} with hourly, daily, monthly, and custom-range reporting.}
+  \resumeItemListEnd
+
+  \vspace{4pt}
+  \textbf{\small\color{navy}Project 3: Firmware Code-Generation Tool (Internal Tooling)}
+  \hfill\tech{Python \textbullet\ C Code Generation \textbullet\ Excel Automation}
+
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{Python CLI tool} that reads customer-provided Modbus register maps (Excel) and auto-generates complete, production-ready C source files for polling, parsing, scaling, and MQTT payload formation.}
+    \resumeItem{Eliminated repetitive per-device firmware changes; \textbf{reduced new-device onboarding time from days to under an hour}.}
+    \resumeItem{Centralized all configuration (baud rate, function codes, polling intervals, JSON keys) in one place, cutting firmware defect rate across all deployed gateways.}
+  \resumeItemListEnd
+
+  \vspace{4pt}
+  \textbf{\small\color{navy}Project 4: STM32MP157 Industrial IoT Edge Device — Linux BSP \& Application}
+  \hfill\tech{C \textbullet\ STM32MP1 \textbullet\ Linux \textbullet\ Device Tree \textbullet\ DRM/KMS \textbullet\ Yocto \textbullet\ Modbus \textbullet\ MQTT}
+
+  \resumeItemListStart
+    \resumeItem{Brought up a \textbf{dual-core STM32MP157F-DK2} (Cortex-A7 Linux + Cortex-M4 FreeRTOS) gateway; configured \textbf{Device Tree (DTS/DTSI)} for UART7 (RS-485), GPIO, and peripheral pin-muxing.}
+    \resumeItem{Developed \textbf{Linux GPIO chardev driver interface} (/dev/gpiochip) for RS-485 direction control; implemented UART7 enablement via Device Tree overlays for Modbus RTU communication.}
+    \resumeItem{Integrated a \textbf{MIPI-DSI TFT touchscreen display} using the \textbf{DRM/KMS} subsystem; configured DSI panel driver and Device Tree bindings for the display pipeline, and built interactive UI with touch-based settings using the Linux input event subsystem.}
+    \resumeItem{Implemented \textbf{multi-threaded gateway application} in C with pthreads — Modbus polling, MQTT publish (TLS), offline SD storage with replay, connectivity monitoring, and display rendering running as concurrent threads.}
+    \resumeItem{Built \textbf{offline-first data pipeline}: sensor readings stored as JSON files on SD card when network is unavailable; replay thread publishes queued data upon reconnection with zero data loss.}
+    \resumeItem{Configured \textbf{Yocto build system} for custom Linux image with libmodbus, mosquitto, sqlite3, cJSON, OpenSSL, and libcurl; set up \textbf{cross-compilation toolchain} (arm-linux-gnueabihf) for iterative development.}
+    \resumeItem{Managed \textbf{Cortex-A7 ↔ Cortex-M4 communication} using OpenAMP/RPMsg for dual-core coordination; M4 handles real-time Modbus tasks with hardware watchdog (IWDG).}
+    \resumeItem{Deployed with \textbf{systemd service management}; integrated syslog/journald for diagnostics and remote log upload to Google Sheets via HTTPS webhooks.}
+  \resumeItemListEnd
+
+  % ── Job 2 ──────────────────────────────────────────────────
+  \resumeSubheading
+    {Syrma SGS Technology}{January 2024 -- May 2024}
+    {Software Developer Intern}{Pune, India}
+
+  \vspace{4pt}
+  \textbf{\small\color{navy}CI/CD Pipeline Analytics \& BOM Fault Detection Tools}
+  \hfill\tech{Python \textbullet\ Bash \textbullet\ GitLab API \textbullet\ MERN \textbullet\ Nexar API}
+
+  \resumeItemListStart
+    \resumeItem{Automated CI/CD pipeline reporting via \textbf{Bash scripting + GitLab API}, generating per-contributor Excel summaries of success rates, failure reasons, and stage bottlenecks — \textbf{saved 2+ hours/day} of manual effort.}
+    \resumeItem{Improved pipeline success rate from \textbf{80\% to 90\%} by identifying recurring failure stages and enabling proactive resolution.}
+    \resumeItem{Built a \textbf{BOM fault detection tool} using Nexar API to automatically validate PCB component availability; reduced 3+ hour manual BOM review to minutes for 100-item lists.}
+  \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+\vspace{-2pt}
+
+% ════════════════ PROJECTS ═══════════════════════════════════
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{\color{navy}GPIO \& EXTI Driver — STM32F4 (Bare-Metal)} \quad\tech{C \textbullet\ ARM Cortex-M4 \textbullet\ STM32CubeIDE \textbullet\ No HAL}}{2023}
+  \resumeItemListStart
+    \resumeItem{Developed a \textbf{complete GPIO peripheral driver from scratch} by directly programming AHB1 clock, GPIO registers (MODER, OTYPER, OSPEEDR, PUPDR) without any HAL/LL abstraction layers.}
+    \resumeItem{Implemented \textbf{NVIC + EXTI interrupt handling} with dynamic line-to-pin mapping; demonstrated deep understanding of ARM Cortex-M4 exception model and memory-mapped I/O.}
+    \resumeItem{Established proficiency in \textbf{bitwise manipulation, peripheral register access,} and hardware-level debugging.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\color{navy}Embedded Linux Data Logger (Unix Domain Sockets)} \quad\tech{C \textbullet\ Linux \textbullet\ AF\_UNIX \textbullet\ I2C \textbullet\ Syslog}}{2025}
+  \resumeItemListStart
+    \resumeItem{Designed a \textbf{multi-process IPC system} using Unix Domain Sockets for decoupled sensor acquisition and data processing services; interfaced hardware via \textbf{Linux I2C driver} (/dev/i2c-*) with CRC validation.}
+    \resumeItem{Implemented custom protocol with structured headers, connection retry logic, and \textbf{syslog/journald} integration for production-level diagnostics.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-2pt}
+
+% ════════════════ EXTRACURRICULAR ════════════════════════════
+\section{Leadership}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Alpha Geeks, GCEK — Content Team Head}{April 2021 -- January 2023}{}{}
+  \vspace{-14pt}
+  \resumeItemListStart
+    \resumeItem{Led CP/DSA workshops and organized coding contests; grew contest participation by \textbf{50\%} during tenure.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-2pt}
+
+% ════════════════ CERTIFICATIONS ═════════════════════════════
+\section{Certifications}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.18in, label={$\bullet$}, itemsep=1pt]
+  \small
+  \item \href{https://drive.google.com/file/d/1EgNRVsyfF4c0dhOu0ZpxeTqFXBzJtF91/view}{\color{navy}\underline{Cloud Computing — NPTEL}} (87\%)
+  \item \href{https://drive.google.com/file/d/1eI4_2EjFB4-ncL_SLh_iVtlrlwEGnf9-/view}{\color{navy}\underline{Python Programming Language — NPTEL}} (96/100)
+\end{itemize}
+
+\end{document}
+
