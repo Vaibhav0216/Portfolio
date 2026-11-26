@@ -21,9 +21,9 @@ export const projects: ProjectCard[] = [
     metric: "5 industrial customers",
   },
   {
-    title: "STM32MP157 Linux BSP Gateway",
+    title: "STM32MP157 Linux Edge Device",
     description:
-      "Dual-core industrial gateway with Linux BSP bring-up, Device Tree configuration, DRM/KMS display integration, and Yocto custom image.",
+      "Dual-core industrial edge device with Linux BSP bring-up, Device Tree configuration, DRM/KMS display integration, and Yocto custom image.",
     tech: ["STM32MP1", "Linux", "Device Tree", "Yocto", "DRM/KMS"],
     metric: "Dual Cortex-A7/M4",
   },
