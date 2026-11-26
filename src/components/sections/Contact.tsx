@@ -25,7 +25,7 @@ export function Contact() {
       >
         <SectionHeading
           title="Get in Touch"
-          subtitle="Feel free to reach out for collaborations, opportunities, or just a conversation about embedded systems"
+          subtitle="Feel free to reach out for collaborations, opportunities, or just a conversation about embedded systems and software development"
         />
         <div className="max-w-md mx-auto space-y-3 sm:space-y-4">
           <a
