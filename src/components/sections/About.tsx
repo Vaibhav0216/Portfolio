@@ -7,7 +7,7 @@ import { personal } from "@/data/personal";
 
 export function About() {
   return (
-    <section id="about" className="py-20 px-6">
+    <section id="about" className="py-14 sm:py-20 px-4 sm:px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -23,11 +23,11 @@ export function About() {
                 src="/profile.jpg"
                 alt={personal.name}
                 fill
-                className="rounded-full object-cover border-4 border-accent/20 dark:border-accent-dark/20"
+                className="rounded-full object-cover object-[center_8%] border-4 border-accent/20 dark:border-accent-dark/20"
                 priority
               />
             </div>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-center sm:text-left">
+            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed text-center sm:text-left">
               {personal.summary}
             </p>
           </div>

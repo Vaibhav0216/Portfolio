@@ -6,7 +6,7 @@ import { personal } from "@/data/personal";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-20">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -16,11 +16,11 @@ export function Hero() {
         <p className="font-mono text-accent dark:text-accent-dark mb-4 text-sm">
           Hello, I&apos;m
         </p>
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">{personal.name}</h1>
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6 font-mono">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">{personal.name}</h1>
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6 font-mono">
           {personal.title}
         </p>
-        <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-sm sm:text-base text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
           {personal.summary}
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">

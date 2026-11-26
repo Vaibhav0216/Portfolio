@@ -15,7 +15,7 @@ function GithubIcon({ size = 20, className = "" }: { size?: number; className?: 
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 px-6 bg-card dark:bg-card-dark">
+    <section id="contact" className="py-14 sm:py-20 px-4 sm:px-6 bg-card dark:bg-card-dark">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

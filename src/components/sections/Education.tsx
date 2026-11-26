@@ -7,7 +7,7 @@ import { education, certifications } from "@/data/education";
 
 export function Education() {
   return (
-    <section id="education" className="py-20 px-6">
+    <section id="education" className="py-14 sm:py-20 px-4 sm:px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
