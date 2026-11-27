@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "Vaibhav Kshirsagar — Senior Embedded Systems & Software Engineer with 2.5+ years of production experience in Linux BSP, FreeRTOS, STM32, ESP32, IoT platforms, and cloud backend development. Based in Pune, India.",
   keywords: [
     "Vaibhav Kshirsagar",
+    "Vaibhav",
+    "Mauli",
+    "Mauli Kshirsagar",
     "Embedded Systems Engineer",
     "Linux BSP Developer",
     "IoT Engineer",
